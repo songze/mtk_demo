@@ -1,0 +1,36 @@
+[information]
+projectname=Demo.mpr
+filename=Demo.mrp
+appname=Demo
+appid=30001
+version=101
+visible=1
+cpu=3
+vendor=杭州斯凯
+output=Demo.mrp
+description=这是杭州斯凯网络科技有限公司Mythroad平台的Demo
+include=C:\SKYMOBI\SDS4CPv1.0\Compiler\include\, sfw\modules\, src\,src\i18n
+config=mtk240,mtk176
+
+[config_mtk176]
+define=DEMO_DEBUG,CONFIG_176
+output=bin\Demo_176.mrp
+bmp_mode=normal
+
+[config_mtk240]
+define=DEMO_DEBUG,CONFIG_240
+output=bin\Demo_240.mrp
+bmp_mode=normal
+
+[files]
+file0 = sfw\mrc\mrc_win.c
+file1 = src\demo.c
+file2 = src\i18n\i18n.c
+file3 = src\icon.c
+
+file100=src\i18n\res_str.mrp
+
+file120=bmp\bk.bmp
+file121=bmp\plane.bmp
+
+file160=music\background.mid
